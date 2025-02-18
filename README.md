@@ -79,7 +79,7 @@ This data contain a significant amount of missing value (6 columns with at least
 - Applied method interquatile range to eliminate the outilers in numeric columns
 
 #### Data Analysis:
-
+![Correlation Matrix](/assets/images/cor_matrix.png)
 
 **Summary:**
 - The top 3 used car manufacturers are Ford, Chevy, and Toyota. But top 3 manufacturers with highest average price are ferrari, tesla, and aston martin. As a result, we can see manufactures affect the price of the used car.
