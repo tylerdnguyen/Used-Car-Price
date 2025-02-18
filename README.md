@@ -63,7 +63,8 @@ Data columns (total 18 columns):
  17  state         426880 non-null  object 
 dtypes: float64(2), int64(2), object(14)
 ```
-
+![image](/images/raw_describe.png)
+![image](/images/missing_frac.png)
 **Quality of data:**
 This data contain a significant amount of missing value (6 columns with at least 30% fraction of missing). Moreover, for numeric columns such as price and odometer, the min and max value make no sense. Therefore, the quality of the raw data is not good, which indicate the poor collection data methods. We need to handle missing data and eliminate the outliers to improve the quality of the data.
 
@@ -79,7 +80,9 @@ This data contain a significant amount of missing value (6 columns with at least
 - Applied method interquatile range to eliminate the outilers in numeric columns
 
 #### Data Analysis:
-![Correlation Matrix](/assets/images/cor_matrix.png)
+![image](/images/cor_matrix.png)
+![image](/images/plot1.png)
+![image](/images/plot2.png)
 
 **Summary:**
 - The top 3 used car manufacturers are Ford, Chevy, and Toyota. But top 3 manufacturers with highest average price are ferrari, tesla, and aston martin. As a result, we can see manufactures affect the price of the used car.
@@ -152,7 +155,7 @@ Score of the best model: 0.7437917035320123
 Number of features with highest accuracy score: 20
 Highest accuracy score: 0.7391931735296362
 ```
-
+![image](/images/SFSPlot.png)
 ### Evaluation
 **Conclusion:**
 - The features in the dataset has nonlinear characteristic since the accuracy score of the poly feature with degree of 2 is significantly higher than the base model with linear feature.
